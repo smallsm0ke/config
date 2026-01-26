@@ -5,12 +5,12 @@ filetype plugin indent on
 syntax on
 
 " Show line numbers
-#set relativenumber
+"set relativenumber
 set number
 
-# Toggle Insetmode/Normalmode with relativenumber/normal number
-#autocmd InsertEnter * set norelativenumber
-#autocmd InsertLeave * set relativenumber
+" Toggle Insetmode/Normalmode with relativenumber/normal number
+"autocmd InsertEnter * set norelativenumber
+"autocmd InsertLeave * set relativenumber
 
 " Set the number of spaces that counts for
 set tabstop=4        
