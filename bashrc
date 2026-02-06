@@ -10,7 +10,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Prompt
-PS1='${debian_chroot:+($debian_chroot)}\[\033[36m\]\u\[\033[37m\]@\[\033[31m\]\h\[\033[37m\]:\[\033[35m\]\w\[\033[37m\]\$ \[\033[0m\]'
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u@\h\[\033[00m\] :: \[\033[01;34m\]\w\[\033[00m\]\$ ' 
 
 # Count how many files there is in a dir | usage: $count dir/
 count() {
@@ -31,4 +31,4 @@ alias zs='vi ~/.bashrc'
 alias sz='source ~/.bashrc'
 alias txt='gnome-text-editor'
 alias pdf='libreoffice --headless --convert-to pdf'
-
+alias nokia='cd "/run/user/1000/gvfs/mtp:host=HMD_Global_QM215-QRD__SN%3ADCF5C48E_BE390B9LU/Internal Storage/DCIM/songs"'
