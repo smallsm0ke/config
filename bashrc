@@ -10,7 +10,13 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # Prompt
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u\[\033[00m\] :: \[\033[01;34m\]\w\[\033[00m\]\$ ' 
+
+# Default (colorized/uncolorized)
+#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '   
+
+# Custom
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;36m\]\u\[\033[00m\] :: \033[3;34m\w\033[1;37m $\033[m '
 
 # Count how many files there is in a dir | usage: $count dir/
 count() {
