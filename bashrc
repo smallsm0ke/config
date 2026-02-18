@@ -8,11 +8,10 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# no color (default)
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '   
-
-# elliot
-#PS1=' \[\033[00;34m\]\u@\h\$:\[\033[m\] '
+#PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '            # default
+#PS1='\[\e[00;31m\]\u@\h\[\e[m\]:\[\e[03;34m\]\w\[\e[m\]\$ '     # red
+PS1='\[\e[03;34m\]\w\[\e[m\]\$ '                               # simple
+#PS1=' \[\033[00;34m\]\u@\h\$:\[\033[m\] '                      # elliot
 
 count() {
     find "$1" -maxdepth 1 -type f | wc -l
