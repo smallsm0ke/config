@@ -8,10 +8,12 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '            # default
+#PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '            # default
 #PS1='\[\e[00;31m\]\u@\h\[\e[m\]:\[\e[00;34m\]\w\[\e[m\]\$ '     # red
-PS1='\[\e[00;36m\]\u\[\e[m\]@\[\e[00;31m\]\h\[\e[m\]:\[\e[00;34m\]\w\[\e[m\]$ '     #colored
+#PS1='\[\e[00;36m\]\u\[\e[m\]@\[\e[00;31m\]\h\[\e[m\]:\[\e[00;34m\]\w\[\e[m\]$ '     #colored
+#PS1='\[\e[01;36m\]\u\[\e[m\]@\[\e[01;31m\]\h\[\e[m\]:\[\e[01;34m\]\w\[\e[m\]$ '     #colored + bold
 #PS1='\[\e[03;34m\]\w\[\e[m\]\$ '                               # simple
+PS1='\n\[\e[01;34m\]\w\n\[\e[01;37m\]\$\[\e[m\] '                               # simple (two line)
 #PS1=' \[\033[00;34m\]\u@\h\$:\[\033[m\] '                      # elliot
 
 count() {
