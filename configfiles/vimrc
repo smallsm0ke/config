@@ -1,6 +1,6 @@
 filetype plugin indent on
-syntax on
-set number
+syntax off
+set nonumber
 set tabstop=4        
 set shiftwidth=4    
 set expandtab      
