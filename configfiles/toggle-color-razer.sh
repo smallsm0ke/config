@@ -3,16 +3,18 @@
 STATE="/tmp/razer-status-color.txt"
 
 MODS=(
-    'polychromatic-cli -d keyboard -o static -c "#0000FF,#0000FF" && polychromatic-cli -d mouse -o static -c "#0000FF,#0000FF"'
-    'polychromatic-cli -d keyboard -o static -c "#FF0000,#FF0000" && polychromatic-cli -d mouse -o static -c "#FF0000,#FF0000"'
-    'polychromatic-cli -d keyboard -o breath -p single -c "#0000FF,#0000FF" && polychromatic-cli -d mouse -o breath -p single -c "#0000FF,#0000FF"'
-    'polychromatic-cli -d keyboard -o breath -p single -c "#FF0000,#FF0000" && polychromatic-cli -d mouse -o breath -p single -c "#FF0000,#FF0000"'
-    'polychromatic-cli -d keyboard -o breath -p dual -c "#0000FF,#FF0000" && polychromatic-cli -d mouse -o breath -p dual -c "#0000FF,#FF0000"'
-    'polychromatic-cli -d keyboard -o breath -p dual -c "#FF0000,#0000FF" && polychromatic-cli -d mouse -o breath -p dual -c #0000FF,#FF0000'
-    'polychromatic-cli -d keyboard -o starlight -p dual:3 -c "#0000FF,FF0000" &&  polychromatic-cli -d mouse -z logo -o breath -p dual -c "#FF0000,#0000FF"
-&&  polychromatic-cli -d mouse -z scroll -o breath -p dual -c "#0000FF,#FF0000" &&  polychromatic-cli -d mouse -z right -o breath -p dual -c "#FF0000,#0000FF" && polychromatic-cli -d mouse -z left -o breath -p dual -c "#0000FF,#FF0000"'
-    'polychromatic-cli -d keyboard -o wave -p 1 && polychromatic-cli -d mouse -o wave -p 1'
-    'polychromatic-cli -d keyboard -o spectrum && polychromatic-cli -d mouse -o spectrum'
+    'polychromatic-cli -o static -c "#0000FF,#0000FF"'
+    'polychromatic-cli -o static -c "#FFFFFF,#FFFFFF"'
+    'polychromatic-cli -o static -c "#FF0000,#FF0000"'
+    'polychromatic-cli -o static -c "#00FF00,#00FF00"'
+    'polychromatic-cli -o static -c "#00FFFF,#00FFFF"'
+    'polychromatic-cli -o static -c "#FFA500,#FFA500"'
+    'polychromatic-cli -o static -c "#FFC0CB,#FFC0CB"'
+    'polychromatic-cli -o static -c "#800080,#800080"'
+    'polychromatic-cli -o static -c "#FFFF00,#FFFF00"'
+    'polychromatic-cli -o static -c "#D3D3D3,#D3D3D3"'
+    'polychromatic-cli -o static -c "#A9A9A9,#A9A9A9"'
+    'polychromatic-cli -o wave -p 1'
 )
 
 if [[ -f "$STATE" ]]; then
