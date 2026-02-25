@@ -1,6 +1,6 @@
 filetype plugin indent on
-syntax on
-set number
+syntax off
+set nonumber
 set tabstop=4        
 set shiftwidth=4    
 set expandtab      
@@ -10,10 +10,4 @@ set showmatch
 set incsearch       
 set clipboard=unnamedplus
 
-
-
-
-
-
-
-
+highlight Visual ctermfg=black ctermbg=white guifg=black guibg=white
