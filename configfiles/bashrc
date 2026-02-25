@@ -109,7 +109,15 @@ fi
 ########
 # Prompt
 
-PS1='\[\e[36m\]\u\[\e[37m\]@\[\e[31m\]\h\[\e[37m\]:\[\e[35m\]\w\[\e[37m\]\$ '
+
+### user   host     directory
+### cyan   red       magenta   (purple)
+#PS1='\[\e[36m\]\u\[\e[37m\]@\[\e[31m\]\h\[\e[37m\]:\[\e[35m\]\w\[\e[37m\]\$ '
+
+#################
+### default
+PS1='\u@\h:\w\$ '
+
 
 ###########
 # Functions
