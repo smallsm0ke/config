@@ -22,6 +22,3 @@ next=$(( (current + 1) % ${#devs[@]} ))
 eval "${devs[$next]}"
 
 echo "$next" > "$file"
-
-
-

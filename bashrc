@@ -1,0 +1,48 @@
+
+
+########
+# Custom
+
+
+# Prompt
+PS1='\u@\h:\w\$ '
+
+
+# Functions
+count() {
+    find "$1" -maxdepth 1 -type f | wc -l
+}
+
+convert_mp3() { 
+    ffmpeg -i "$1" -vn -acodec libmp3lame -q:a 2 "${1%.*}.mp3"
+}
+
+pdf() {
+    libreoffice --headless --convert-to pdf "$1"
+}
+
+txt() {
+    libreoffice --headless --convert-to txt "$1"
+}
+
+
+# Editor
+
+export VISUAL=vim
+export EDITOR=vim
+
+
+# Aliases
+
+alias mp4='yt-dlp -k -o "%(title)s.%(ext)s" --recode-video mp4 --postprocessor-args "-vcodec libx264 -acodec aac"'
+alias mp3='yt-dlp -x --audio-format mp3'
+alias nokia='cd "/run/user/1000/gvfs/mtp:host=HMD_Global_QM215-QRD__SN%3ADCF5C48E_BE390B9LU/Internal Storage/music"'
+alias iphone='cd "/run/user/1000/gvfs/gphoto2:host=Apple_Inc._iPhone_00008020001560C10E8A002E/202602__"'
+alias zs='vi ~/.bashrc'
+alias sz='source ~/.bashrc'
+alias tm='vi ~/.tmux.conf'
+alias im='vi ~/.config/i3/config' 
+alias zm='i3-msg reload'
+
+
+

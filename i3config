@@ -1,0 +1,9 @@
+
+# my shortcuts
+
+# audio
+bindsym Ctrl+Right exec ~/.switchaudio.sh
+bindsym Ctrl+Up exec amixer set Master 10%+
+bindsym Ctrl+Down exec amixer set Master 10%-
+bindsym Ctrl+Left exec amixer set Master toggle
+
